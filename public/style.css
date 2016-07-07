@@ -7,6 +7,8 @@ body {
   margin: 0;
   line-height: 1.6;
   background-color: mistyrose;
+  font-family: 'Sue Ellen Francisco', cursive;
+
 }
 h1,
 h2,
@@ -16,6 +18,8 @@ h5,
 h6 {
   line-height: 1.2;
   color: black;
+  font-family: 'Copse', serif;
+  margin: 1rem;
 }
 header {
   color: white;
@@ -36,6 +40,18 @@ section > .wrap {
   max-width: 90%;
   display: block;
   margin-bottom: 0;
+}
+li {
+  list-style: none;
+}
+
+.meal {
+  color: purple;
+  font-size: 1.5rem;
+}
+
+.notes {
+  font-size: 1.5rem;
 }
 
 

@@ -34,28 +34,3 @@ app.post('/soylogs', (req, res) => {
     res.redirect('/')
   });
 });
-
-//update
-app.put('/soylogs', (req, res) => {
-  db.collection('soylogs')
-  .findOneAndUpdate({meal: 'Yoda'}, {
-    $set: {
-      meal: req.body.meal,
-      notes: req.body.notes
-    }
-  }, {
-    sort: {_id: -1},
-    upsert: true
-  }, (err, result) => {
-    if (err) return res.send(err)
-    res.send(result)
-  });
-});
-
-app.delete('/soylogs', (req, res) => {
-  db.collection('soylogs').findOneAndDelete({meal: req.body.meal},
-  (err, result) => {
-    if (err) return res.send(500, err)
-    res.send('A darth vader quote got deleted')
-  });
-});

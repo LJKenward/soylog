@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>Soylent Girl - Soylog</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-
     <link href='https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
   </head>
@@ -24,13 +22,13 @@
 
     </div></header><section><div class="wrap">
 
-      <h1>Right hand side.</h1>
+      <h1>Soylog</h1>
 
-      <ul class="soylogs">
+      <ul>
         <% for(var i=0; i<soylogs.length; i++) {%>
-          <li class="soylogs">
-            <span><%= soylogs[i].meal %></span>
-            <span><%= soylogs[i].notes %></span>
+          <li>
+            <span class="meal"><%= soylogs[i].meal %></span>
+            <span class="notes"><%= soylogs[i].notes %></span>
             <!-- <span><%= soylogs[i].datetime %></span> -->
           </li>
         <% } %>
