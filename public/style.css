@@ -1,0 +1,100 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  line-height: 1.6;
+  background-color: mistyrose;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  color: black;
+}
+header {
+  color: white;
+  background-color: white;
+}
+header a {
+  color: white;
+}
+section > .wrap {
+  max-width: 40em;
+  margin: 0 auto;
+}
+.wrap {
+  padding: 1em 2em;
+  min-height: 100%;
+}
+.logo {
+  max-width: 90%;
+  display: block;
+  margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 670px) {
+  html,
+  body,
+  .burrito {
+    height: 100%;
+    overflow: hidden;
+  }
+  header,
+  section {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 50%;
+  }
+  header {
+    -webkit-transform: skewX(-4deg);
+            transform: skewX(-4deg);
+    margin-left: -35px;
+    margin-right: 35px;
+    padding: 0 35px;
+  }
+  header > .wrap {
+    -webkit-transform: skewX(4deg);
+            transform: skewX(4deg);
+  }
+  section {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+
+
+/*body {
+  background-color: white;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+h1 {
+  font-family: 'Copse', serif;
+}
+
+.logo {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.square-bg-one {
+  background-color: mistyrose;
+  width: 70%;
+  height: 300px;
+  padding: 10%;
+  margin: 10% auto;
+  margin-top: 5%;
+}*/

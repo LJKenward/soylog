@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Soylent Girl - Soylog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+  </head>
+  <body><div class="burrito">
+
+    <header><div class="wrap">
+      <img class="logo" src="http://i.imgbox.com/Ht78LdPn.png"></img>
+
+      <h2>Soylog</h2>
+      <h3>Latest Meal Info:</h3>
+          <form action="/soylogs" method="POST">
+            <input type="text" placeholder="Meal" name="meal">
+            <input type="text" placeholder="Notes" name="notes">
+            <button type="submit">Enter</button>
+          </form>
+
+    </div></header><section><div class="wrap">
+
+      <h1>Right hand side.</h1>
+
+      <ul class="soylogs">
+        <% for(var i=0; i<soylogs.length; i++) {%>
+          <li class="soylogs">
+            <span><%= soylogs[i].meal %></span>
+            <span><%= soylogs[i].notes %></span>
+            <!-- <span><%= soylogs[i].datetime %></span> -->
+          </li>
+        <% } %>
+      </ul>
+
+
+    </div></section>
+
+  </div> <!-- /burrito -->
+
+
+
+
+
+<script src="main.js"></script>
+  </body>
+</html>
