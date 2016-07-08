@@ -8,7 +8,7 @@ body {
   line-height: 1.6;
   background-color: mistyrose;
   font-family: 'Sue Ellen Francisco', cursive;
-
+  text-align: center;
 }
 h1,
 h2,
@@ -20,6 +20,7 @@ h6 {
   color: black;
   font-family: 'Copse', serif;
   margin: 1rem;
+  text-align: center;
 }
 header {
   color: white;
@@ -40,13 +41,16 @@ section > .wrap {
   max-width: 90%;
   display: block;
   margin-bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 li {
   list-style: none;
 }
 
 .meal {
-  color: purple;
+  color: #9F1F63;
   font-size: 1.5rem;
 }
 
@@ -54,6 +58,12 @@ li {
   font-size: 1.5rem;
 }
 
+img {
+  max-width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media screen and (min-width: 670px) {
   html,
@@ -86,6 +96,59 @@ li {
     overflow-y: scroll;
   }
 }
+
+/* form */
+form {
+  max-width:420px;
+  margin:50px auto;
+}
+
+.feedback-input {
+  color:#9F1F63;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid mistyrose;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  font-family: 'Sue Ellen Francisco', cursive;
+
+}
+
+.feedback-input:focus { border:2px solid #9F1F63; }
+
+.feedback-input:hover { background-color: mistyrose;}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+  font-family: 'Sue Ellen Francisco', cursive;
+
+}
+
+[type="submit"] {
+  font-family: 'Sue Ellen Francisco', cursive;
+  width: 100%;
+  background:mistyrose;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#9F1F63; }
 
 
 

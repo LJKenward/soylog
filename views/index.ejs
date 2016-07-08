@@ -15,8 +15,8 @@
       <h2>Soylog</h2>
       <h3>Latest Meal Info:</h3>
           <form action="/soylogs" method="POST">
-            <input type="text" placeholder="Meal" name="meal">
-            <input type="text" placeholder="Notes" name="notes">
+            <input type="text" placeholder="Meal" name="meal" class="feedback-input">
+            <textarea type="text" placeholder="Notes" name="notes" class="feedback-input"></textarea>
             <button type="submit">Enter</button>
           </form>
 
@@ -27,13 +27,17 @@
       <ul>
         <% for(var i=0; i<soylogs.length; i++) {%>
           <li>
-            <span class="meal"><%= soylogs[i].meal %></span>
-            <span class="notes"><%= soylogs[i].notes %></span>
+            <p><span class="meal"><%= soylogs[i].meal %></span>
+            <span class="notes"><%= soylogs[i].notes %></span></p>
             <!-- <span><%= soylogs[i].datetime %></span> -->
           </li>
         <% } %>
       </ul>
 
+<img src="http://i.imgbox.com/TpytOcs8.png"></img>
+<img src="http://i.imgbox.com/A03hYXbf.png"></img>
+<img src="http://i.imgbox.com/ug2LsDBC.png"></img>
+<img src="http://i.imgbox.com/KjuApCkX.png"></img>
 
     </div></section>
 
