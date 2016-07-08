@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Soylent Girl - Soylog</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
-  </head>
-  <body><div class="burrito">
+</head>
 
-    <header><div class="wrap">
-      <img class="logo" src="http://i.imgbox.com/Ht78LdPn.png"></img>
+<body>
+    <div class="burrito">
 
-      <h2>Soylog</h2>
-      <h3>Latest Meal Info:</h3>
-          <form action="/soylogs" method="POST">
-            <input type="text" placeholder="Meal" name="meal" class="feedback-input">
-            <textarea type="text" placeholder="Notes" name="notes" class="feedback-input"></textarea>
-            <button type="submit">Enter</button>
-          </form>
+        <header>
+            <div class="wrap">
+                <img class="logo" src="http://i.imgbox.com/Ht78LdPn.png"></img>
 
-    </div></header><section><div class="wrap">
+                <h2>Soylog</h2>
+                <form action="/soylogs" method="POST">
+                    <input type="text" placeholder="Meal" name="meal" class="feedback-input">
+                    <textarea type="text" placeholder="Notes" name="notes" class="feedback-input"></textarea>
+                    <button type="submit">Enter</button>
+                </form>
 
-      <h1>Soylog</h1>
+            </div>
+        </header>
+        <section>
+            <div class="wrap">
 
-      <ul>
-        <% for(var i=0; i<soylogs.length; i++) {%>
-          <li>
-            <p><span class="meal"><%= soylogs[i].meal %></span>
-            <span class="notes"><%= soylogs[i].notes %></span></p>
-            <!-- <span><%= soylogs[i].datetime %></span> -->
-          </li>
-        <% } %>
-      </ul>
+                <h1>Soylog</h1>
 
-<img src="http://i.imgbox.com/TpytOcs8.png"></img>
-<img src="http://i.imgbox.com/A03hYXbf.png"></img>
-<img src="http://i.imgbox.com/ug2LsDBC.png"></img>
-<img src="http://i.imgbox.com/KjuApCkX.png"></img>
+                <ul>
+                    <% for(var i=0; i<soylogs.length; i++) {%>
+                        <li>
+                            <p><span class="meal"><%= soylogs[i].meal %></span>
+                                <span class="notes"><%= soylogs[i].notes %></span></p>
+                            <!-- <span><%= soylogs[i].datetime %></span> -->
+                        </li>
+                        <% } %>
+                </ul>
 
-    </div></section>
+                <img src="http://i.imgbox.com/TpytOcs8.png"></img>
+                <img src="http://i.imgbox.com/A03hYXbf.png"></img>
+                <img src="http://i.imgbox.com/ug2LsDBC.png"></img>
+                <img src="http://i.imgbox.com/KjuApCkX.png"></img>
 
-  </div> <!-- /burrito -->
+            </div>
+        </section>
+
+    </div>
+    <!-- /burrito -->
 
 
 
 
 
-<script src="main.js"></script>
-  </body>
+    <script src="main.js"></script>
+</body>
+
 </html>
